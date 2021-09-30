@@ -10,7 +10,7 @@
          <font-awesome-icon icon="angle-down" />
       </div>
       <div class="user-dropdown-content">
-         <a href=""><font-awesome-icon icon="cogs" /> Administração</a>
+         <router-link to="/admin"><font-awesome-icon icon="cogs" /> Administração</router-link>
          <a href=""><font-awesome-icon icon="sign-out-alt" /> Sair</a>
       </div>
 

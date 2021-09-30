@@ -43,11 +43,11 @@ body {
     "menu content"
     "menu footer";  
 }
-#appx.hide-menu {
-  
+#appx.hide-menu {  
+  grid-template-columns: 1fr;
   grid-template-areas: 
-    "header header"
-    "content content"
-    "footer footer";  
+    "header"
+    "content"
+    "footer";  
 }
 </style>

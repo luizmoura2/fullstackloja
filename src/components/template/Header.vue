@@ -4,7 +4,7 @@
         <font-awesome-icon :icon="icon" />        
       </a>
       <h1 class="title">
-         {{ title }}
+         <router-link to ="/" >{{ title }}</router-link>
       </h1>
       <UserDropDown v-if="!hideUserDropdown" />
    </header>
@@ -53,6 +53,11 @@
       text-align: center;
    }
    .title a {
+      color: #fff;
+      text-decoration: none;
+
+   }
+   .title a:hover {
       color: #fff;
       text-decoration: none;
 
