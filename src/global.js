@@ -1,5 +1,3 @@
-//import Vue from 'vue'
-
 export const userKey = '__knowledge_user'
 export const baseApiUrl = 'http://localhost:8000/api'
 
@@ -13,4 +11,4 @@ export const baseApiUrl = 'http://localhost:8000/api'
     }
 }
 
-export default { baseApiUrl,  userKey }
+export default { baseApiUrl, showError, userKey }

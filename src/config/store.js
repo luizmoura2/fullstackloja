@@ -1,14 +1,6 @@
 
 import { createStore } from 'vuex'
 
-/* Vue.use(Vuex)
-
-   export default new Vuex.Store({
-      state: {
-         isMenuVisible: true
-      }
-   }) 
-*/
 // Create a new store instance.
 const store = createStore({
    state () {

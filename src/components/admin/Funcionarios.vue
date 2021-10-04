@@ -183,7 +183,7 @@
 
 <script>
 
-import { baseApiUrl } from '@/global'
+import { baseApiUrl, showError } from '@/global'
 
 export default {
    name: 'Funcionario',
@@ -271,7 +271,7 @@ export default {
                     this.$toasted.global.defaultSuccess()
                     this.reset()
                 })
-                .catch()
+                .catch(showError)
         },
        
         remove(){
@@ -282,7 +282,7 @@ export default {
                     this.reset()
                     this.$toasted.global.defaultSuccess()
                 })
-                .catch()
+                .catch(showError)
         },
         hideModal() {
             this.$refs['modal-f'].hide()

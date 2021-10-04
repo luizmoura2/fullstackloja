@@ -170,8 +170,7 @@
 
 <script>
 
-import { baseApiUrl } from '@/global'
-//import axios from 'axios' 
+import { baseApiUrl, showError } from '@/global'
 
 export default {
     name: 'Funcionario',
@@ -239,7 +238,7 @@ export default {
                 .then(res =>{
                     this.funcionario = res.data
                     this.loadCidades()
-                })  
+                }).catch(showError)  
 
         },
        
@@ -251,7 +250,7 @@ export default {
                     this.reset()
                     this.$toasted.global.defaultSuccess()
                 })
-                .catch()
+                .catch(showError)
         },
          hideModal() {
             this.$refs['modal-f'].hide()
